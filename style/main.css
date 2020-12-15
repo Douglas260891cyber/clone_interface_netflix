@@ -1,0 +1,36 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+/*Definindo um padrão...*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--preto);
+  font-family: "Times New Roman", Times, serif;
+}
+header .logo {
+  color: var(--vermelho);
+  font-family: "Aria Black";
+  font-size: 50px;
+}
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+}
+/* Mudando a cor ao passar o mouse. Função 'hover'...*/
+header nav a:hover {
+  color: #fff;
+}
+/*Aula 4*/
