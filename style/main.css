@@ -9,28 +9,68 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*BASE.*/
 body {
   background: var(--preto);
   font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 header .logo {
+  margin-left: 5px;
   color: var(--vermelho);
-  font-family: "Aria Black";
-  font-size: 50px;
+  font-family: "Arial Black", Helvetica, sans-serif;
+  font-size: 40px;
 }
 header nav a {
   text-decoration: none;
   color: #aaa;
   margin-right: 10px;
 }
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 15px;
-}
 /* Mudando a cor ao passar o mouse. Função 'hover'...*/
 header nav a:hover {
   color: #fff;
 }
-/*Aula 4*/
+/*FILME PRINCIPAL.*/
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/img/the-walking-dead.png");
+ 
+  height: 400px;
+  background-size: cover; /*A imagem pega a area de cobertura da div*/
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.filme-principal .descricao{
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+}
+.titulo{
+  font-size: 35px;
+  margin-left: 10px;
+}
+.botoes{
+  margin: 10px;
+}
+.logo-n{
+  display: flex; /*Alinha elementos lado a lado*/
+  align-items: center;
+}
+.series{
+  margin-left:-13px;
+  font-family: 'Arial', Helvetica, sans-serif;
+}
+.botao{
+  background: linear-gradient(rgba(255, 255, 255, 0.301), rgba(255, 255, 255, 0.945) 100%)
+}
