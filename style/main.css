@@ -94,9 +94,11 @@ header nav a:hover {
 .botao i {
   margin-right: 8px;
 }
-.box-filmes{
+.box-filmes {
   height: 100%;
   width: 100%;
   display: block;
 }
-/*Aula 6*/
+.carrosel-filmes {
+  margin-top: 8px;
+}
