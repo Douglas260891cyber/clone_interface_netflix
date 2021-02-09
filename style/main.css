@@ -122,3 +122,38 @@ header nav a:hover {
   color: var(--vermelho);
   margin-top: 10px;
 }
+.rodape i {
+  padding: 10px;
+}
+/*Separando os itens*/
+.rodape-texto ul {
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #aaa;
+  font-size: 12px;
+}
+.rodape-texto li {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  box-sizing: border-box;
+  height: 25%;
+  padding: 8px;
+}
+li:nth-child(odd) {
+  /* este css será aplicato nos LI impares (1, 3, 5... ).         */
+  clear: both; /* forçamos a quebra de linha por segurança...                  */
+  float: left; /* ... e o alinhamos à esquerda.                                */
+  width: 50%; /* Aplicamos 50% na esquerda, os da direita "herdam" o resto.   */
+}
+
+li:nth-child(4n+2),          /* aqui pulamos de 4 em 4 itens começando do 2 ( 2, 6, ...).    */
+li:nth-child(4n+3) {
+  /* aqui de 4 em 4 começando do 3 ( 3, 7, ... )                  */
+}
